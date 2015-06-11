@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle ghost-typer'
+      'command': 'ghost-typer:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'ghost-typer'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'ghost-typer:toggle'
+        }
+      ]
+    ]
+  }
+]
