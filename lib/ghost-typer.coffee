@@ -50,5 +50,6 @@ class GhostTyper
     , pause
 
   insertCurrentChar: =>
+    return unless @text[@index]
     @editor.insertText(@text[@index])
     @index++
